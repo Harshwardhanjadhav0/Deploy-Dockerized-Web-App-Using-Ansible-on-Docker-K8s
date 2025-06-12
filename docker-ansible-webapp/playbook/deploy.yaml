@@ -2,8 +2,8 @@
 - name: Build, push, and run Flask Docker container via Ansible
   hosts: localhost
   vars:
-    docker_username: "harshj2003"
-    docker_password: "jadhav8668396959"  # ⚠️ Use ansible-vault for real projects
+    docker_username: ""
+    docker_password: ""  # ⚠️ Use ansible-vault for real projects
     image_name: "ansible-dockerized-app"
     full_image_name: "{{ docker_username }}/{{ image_name }}:latest"
     build_path: "/tmp/webapp"
